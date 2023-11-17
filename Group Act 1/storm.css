@@ -1,0 +1,234 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  /* grid */
+  .container{
+    max-width: 130rem;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    /* 16px for 1rem */
+  }
+  
+  /* Train */
+  .train{
+    padding: 5rem 0;
+    background-color: white;
+    
+  }
+.train h2{
+    font-size: 5rem;
+    color: black;
+    font-weight: 600;
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.train .train_wrapper{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10rem;
+}
+.train a{
+    width: 15rem;
+    font-size: 2rem;
+}
+/* Footer */
+.footer{
+    padding: 5rem 0;
+    background-color: white;
+
+}
+.footer .footer_wrapper{
+    display: flex;
+    gap: 5rem;
+}
+.footer .footer_links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer .footer_links h4{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+/*REAPETABLE PATTERN*/
+.btn{
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 5rem;
+    font-weight: 600
+}
+.btn.bg--mint{
+    background: #04ddb2;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.btn.bg--mint:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.item{
+  display:flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.item_content{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap:11rem;
+  padding: 5rem 0;
+  
+}
+
+.item_content h4{
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 0;
+}
+.item_content p{
+  max-width: 60rem;
+  line-height: 1.8;
+}
+.item_text{
+  color: #2b2b2b;
+}
+.item_content:nth-of-type(odd){
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0 auto;
+}
+.item_content:nth-of-type(even){
+  display: flex;
+  background-color: lightgrey;
+  justify-content: center;
+}
+@media screen and(max-width:500px) {
+  .item{
+
+  }
+  .item .item_content{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+   
+    
+  }
+}

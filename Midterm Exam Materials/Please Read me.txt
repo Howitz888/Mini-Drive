@@ -1,0 +1,17 @@
+primary - #e91957
+light - #ffffff
+dark - #2b2b2b
+facebook blue - #3b5998
+instagram pink - #e91957
+twitter blue - #26a7de
+
+Font Awesome Kits Link
+ <script
+      src="https://kit.fontawesome.com/a6726e13c6.js"
+      crossorigin="anonymous"
+ ></script>
+
+Font Awesome Icons
+Facebook - <i class="fa-brands fa-facebook-f"></i>
+Instagram - <i class="fa-brands fa-instagram"></i>
+Twitter - <i class="fa-brands fa-twitter"></i>
